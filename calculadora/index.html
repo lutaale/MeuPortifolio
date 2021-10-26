@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" href="./main.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <main>
+        <div id="display"></div>
+        <div id="btn-calculadora">
+            <button onclick="limpar()"id="limpar">C</button><br>
+            <button onclick="inserir(7)"id="tecla7">7</button>
+            <button onclick="inserir(8)"id="tecla8">8</button>
+            <button onclick="inserir(9)"id="tecla9">9</button><br>
+            <button onclick="inserir(4)"id="tecla6">4</button>
+            <button onclick="inserir(5)"id="tecla5">5</button>
+            <button onclick="inserir(6)"id="tecla6">6</button><br>
+            <button onclick="inserir(1)"id="tecla1">1</button>
+            <button onclick="inserir(2)"id="tecla2">2</button>
+            <button onclick="inserir(3)"id="tecla3">3</button><br>
+            <button onclick="inserir(0)"d="tecla0">0</button>
+            <button onclick="inserir('.')"id="tecla.">.</button>
+            <button onclick="inserir('/')"id="operador">/</button>
+
+        </div>
+        <div id="operadores">
+            <button onclick="calcular () "> = </button>
+            <button onclick="inserir('*')"id="operador">x</button>
+            <button onclick="inserir('-')"id="operador">-</button>
+            <button onclick="inserir('+')"id="operador">+</button>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>
