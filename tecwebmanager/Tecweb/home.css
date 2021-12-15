@@ -1,0 +1,151 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    min-width:100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    width:100vw;
+    height:100px;
+    background:#6d88f3;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.header a strong{
+    color: #42307d;
+}
+.box_listaprestadores{
+    margin-top:12rem;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+
+}
+.boxlistavisitantes{
+    opacity: 0;
+    pointer-events: none;
+    margin-top: 12rem;
+    position: absolute;
+
+ }
+ .boxencomendas{
+    opacity: 0;
+    pointer-events: none;
+    margin-top: 12rem;
+    position: absolute;
+ }
+.box_listaprestadores.activebox_listaprestadores,
+.boxlistavisitantes.activeboxlistavisitantes,
+.boxencomendas.activeboxencomendas{
+    opacity: 1;
+    pointer-events: auto;
+    position: absolute;
+}
+.btns{
+    display:flex;
+    margin-top:2rem;
+}
+.btns button{
+width: 150px;
+cursor: pointer;
+background: #1c2461;
+height: 55px;
+border:2px solid #6172f3b4;
+border-radius: 5px;
+color: white;
+font-size: 12px;
+margin-left:10px;
+}
+.btns button:hover{
+    width:160px;
+}
+input[name="sair"]{
+    border:none;
+    cursor: pointer;
+    background: #1c2461;
+    width:80px;
+    height:30px;
+    border-radius:4px;
+    text-align:center;
+    color:white;
+}
+input[name="sair"]:hover{
+ width:90px;
+ background:red;
+ }
+ table{
+     background-color:rgba(51, 64, 158, 0.192);
+     backdrop-filter:blur(10px);
+     -webkit-backdrop-filter:blur(10px);
+     border-radius: 5px;
+     border-left: 1px solid grey;
+ }
+ tbody{
+    background-color:#6d88f354;
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    border-radius: 5px;
+    color: white;
+
+ }
+ td a img{
+  width: 50px;
+  height: 50px;
+ }
+ td a img:hover{
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+
+@media(max-width:590px){
+table{
+    font-size: 10px;
+}
+td a img{
+    width: 40px;
+    height: 40px;
+  
+}
+.btns button{
+    width:100px;
+}
+.btns button:hover{
+    width: 115px;
+}
+}
+@media(max-width:300px){
+    
+    header{
+        min-width: 100vw;
+    }
+    header a {
+        margin-left: 40px;
+    }
+    table{
+        font-size: 10px;
+    }
+    td a img{
+        width: 40px;
+        height: 40px;
+      
+    }
+    .btns button{
+        width:70px;
+    }
+}
