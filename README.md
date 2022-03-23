@@ -12,6 +12,7 @@ CSS
 PHP
 GIT
 Github
+Mysql
 
 atualmente estudado o framework react native e react js.
 
