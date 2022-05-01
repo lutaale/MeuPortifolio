@@ -1,0 +1,98 @@
+@media(max-width:500px) {
+    #logo img {
+        width: 300px;
+        height: 160px;
+        margin-left: -4rem
+    }
+
+    #btnarea {
+        margin-left: 0;
+    }
+
+    #ilustracao {
+        display: none;
+    }
+
+    #text {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    #text button {
+        margin-left:44px;
+    }
+
+    #skillsgrup img {
+        width: 60px;
+    }
+
+    #box1{
+        height: 460px;
+    }
+    #box2 {
+        background: none;
+    }
+    #box2 h2{
+        font-size: 25px;
+    }
+    #box3 {
+        height: 900px;
+    }
+
+    #boxprojetos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #formulario {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10rem;
+    }
+
+    div.inputs {
+        width: 250px;
+    }
+
+    #msg {
+        width: 250px;
+    }
+
+    div.inputs .span {
+        left: 75px;
+    }
+
+    #linha {
+        display: none;
+    }
+
+    .containerform {
+        width: 100%;
+    }
+
+    .containerform button {
+        width: 250px;
+    }
+
+    #minha-foto {
+        margin-top: -9rem;
+        margin-bottom: 2rem;
+    }
+
+    #sobremim {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 16rem;
+    }
+
+    .txtsobremin {
+        margin-top: 0;
+    }
+    .title{
+        font-size: 20px;
+    }
+}

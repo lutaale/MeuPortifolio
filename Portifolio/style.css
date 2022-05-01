@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b1b1b;
+}
+
+header {
+    font-family: 'poppins', sans-serif;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 50%;
+
+}
+
+#logo img {
+    width: 600px;
+    height: 200px;
+    margin-left: 6rem;
+}
+
+#btnarea {
+    width: 50%;
+    margin-left: 6rem;
+    visibility: hidden;
+}
+
+#menubtn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#menubtn:hover {
+    animation: flutuando 1s;
+
+}
+
+#btnarea button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: #C55A11;
+    margin-left: 20px;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition:  ease-in-out;
+}
+
+#btnarea button:hover {
+    background-color: #C55A11;
+    color: white;
+}
+
+#box1 {
+    width: 100%;
+    height: 515px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ilustracao img {
+    width: 400px;
+    animation-delay: 2s;
+}
+
+#ilustracao img {
+    animation: flutuando 1s infinite;
+}
+
+@keyframes flutuando {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#ilustracao {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text button {
+    width: 300px;
+    height: 70px;
+    background-color: transparent;
+    border: 1px solid #C55A11;
+    color: #C55A11;
+    font-size: 20px;
+    margin-left: 80px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#text button:hover {
+    animation: flutuando 1s infinite;
+}
+
+#text {
+    width: 50%;
+    font-size: 30px;
+    font-family: 'poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -12rem;
+}
+
+#text h2 {
+    margin-top: 10px;
+    margin-left: 5rem;
+}
+
+#box2 {
+    width: 100%;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./img/coding-g1878d61b5_1920.jpg');
+    background-attachment: fixed;
+}
+
+#box2 h2 {
+    font-size: 40px;
+    padding-top: 5px;
+    color: white;
+    font-family: 'josefin sans', sans-serif;
+    margin-bottom: 1rem;
+}
+
+#box2 img:hover {
+    animation: flutuando 1s infinite;
+}
+
+#box3 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'poppins', sans-serif;
+}
+
+.title h2:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #C55A11;
+    position: absolute;
+    right: 38rem;
+    top: 61rem;
+}
+
+.title h2::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #C55A11;
+    position: absolute;
+    right: 53.3rem;
+    top: 61rem;
+}
+
+#imgsprojetosgrup {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.projetos img,
+.projetos2 img,
+.projetos3 img {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.projetos span,
+.projetos2 span,
+.projetos3 span {
+    color: white;
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#boxprojetos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#proj1,
+#proj2,
+#proj3 {
+    width: 400px;
+    height: 40px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.butonsarea a,
+.butonsarea button {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #C55A11;
+    font-family: 'poppins', sans-serif;
+    border: 1px solid #C55A11;
+    cursor: pointer;
+}
+
+
+#formulario {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.containerform {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.inputs {
+    border: 1px solid #C55A11;
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 2rem;
+}
+
+#msg {
+    width: 400px;
+    height: 100px;
+}
+
+div.inputs .input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+div.inputs .span {
+    position: absolute;
+    pointer-events: none;
+    background-color: #1b1b1b;
+    padding: 3px;
+    color: #C55A11;
+    font-family: 'poppins', sans-serif;
+    left: 200px;
+    transition: 0.3s ease-in-out;
+}
+
+div.inputs .input:focus~.span,
+div.inputs .input:valid~.span {
+    transform: translateY(-23px);
+}
+
+#formulario h2 {
+    font-size: 30px;
+    font-family: 'poppins', sans-serif;
+    color: white;
+}
+
+#linha {
+    width: 1px;
+    height: 500px;
+    background-color: grey;
+}
+
+.containerform button {
+    width: 400px;
+    height: 45px;
+    color: #1b1b1b;
+    background-color: #C55A11;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.containerform button:hover {
+    animation: flutuando 1s infinite;
+}
+
+#sobremim {
+    width: 50%;
+    display: flex;
+}
+
+
+#minha-foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50% 20% 20% 10%;
+    border: 1px solid grey;
+    margin-top: -15rem;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C55A11;
+}
+
+#minha-foto img {
+    width: 180px;
+}
+
+.txtsobremin {
+    margin-top: -10rem;
+    margin-left: 2rem;
+    font-family: 'poppins', sans-serif;
+}
+
+.txtsobremin h1 {
+    color: white;
+}
+
+.txtsobremin p {
+    font-size: 20px;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+footer img{
+    margin-left: 10px;
+}
