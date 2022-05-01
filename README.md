@@ -1,8 +1,7 @@
 
 # Olá seja bem vindo ao meu Github!
 
-Meu nome é Alexandre Sou Desenvolvedor web jr na Empresa Science,
-https://agenciascience.com.br  -> site em que eu mesmo desenvolvi!
+Meu nome é Alexandre Sou Desenvolvedor web
 
 
 ## 🛠 Habilidades
