@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="img/phinterlogo-removebg-preview.png" type="image/x-icon">
+    <title>Phinter login</title>
+</head>
+
+<body>
+    <section id="section1">
+        <header>
+            <div id="imglogo"><img src="img/phinterlogo-removebg-preview.png" alt="Phinterlogo"></div>
+        </header>
+        <div id="logintext">
+            <img
+                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-login-web-store-flaticons-lineal-color-flat-icons-3.png" />
+            <h1>Login</h1>
+        </div>
+        <div id="msgvalid">
+            <p>Login com sucesso!
+            <div id="nomediv"></div>
+            </p>
+        </div><br><br>
+        <div id="formgrup">
+            <div id="msgerro">
+                <p>Campos nao preenchidos ou dados incorretos</p>
+            </div>
+            <div class="inputs">
+                <input class="input" name="email" id="email" type="text" required autocomplete="off">
+                <span class="span">Digite seu email</span>
+            </div>
+            <div id="input2" class="inputs">
+                <input class="input" type="password" name="senha" id="senha" required>
+                <span class="span2">Digite sua senha</span>
+            </div>
+            <div id="entrarbtn">
+                <button onclick="entrar()"><img
+                        src="https://img.icons8.com/fluency-systems-filled/48/ffffff/enter-2.png" />Entrar <div
+                        class="load"></div></button>
+            </div>
+            <div id="cadastrobtn">
+                <button id="cadastro"><img src="https://img.icons8.com/material-sharp/24/ffffff/user.png" />Cadastrar
+                    usuário</button>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <script src="./cadfuncionarios/cad.js"></script>
+</body>
+
+</html>

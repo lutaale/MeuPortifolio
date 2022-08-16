@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    transition: all 0.2s ease;
+}
+
+#container {
+    display: block;
+    margin-top: 2rem;
+}
+
+#container2 {
+    display: none;
+    margin-top: 2rem;
+}
+
+#container3 {
+    display: none;
+    margin-top: 2rem;
+}
+
+body {
+    background-color: #16172c;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-top: 1rem;
+}
+
+.campo {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 10px;
+    margin-bottom: 2rem;
+}
+
+.campo2 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 10px;
+    margin-bottom: 2rem;
+}
+
+.campo3 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 10px;
+    margin-bottom: 2rem;
+}
+
+.campo input,
+.campo2 input,
+.campo3 input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+}
+
+#container label {
+    font-size: 15px;
+    color: silver;
+}
+
+#container2 label {
+    font-size: 15px;
+    color: silver;
+}
+
+#container3 label {
+    font-size: 15px;
+    color: silver;
+}
+
+#btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container button {
+    height: 60px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container button:hover {
+    background-color: rgb(4, 82, 4);
+
+}
+
+#container #enviarorcamento {
+    height: 60px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#container #enviarorcamento:hover {
+    background-color: rgb(12, 76, 141);
+
+}
+
+#container2 button {
+    height: 60px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container2 button:hover {
+    background-color: rgb(4, 82, 4);
+
+}
+
+#container2 #enviarorcamento {
+    height: 60px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#container2 #enviarorcamento:hover {
+    background-color: rgb(12, 76, 141);
+
+}
+
+#container3 button {
+    height: 60px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container3 button:hover {
+    background-color: rgb(4, 82, 4);
+
+}
+
+#container3 #enviarorcamento {
+    height: 60px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#container3 #enviarorcamento:hover {
+    background-color: rgb(12, 76, 141);
+
+}
+
+footer {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+footer button {
+    float: right;
+    margin-right: 3rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(16, 94, 172);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#navbtns {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbtns button {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 110px;
+    height: 35px;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#navbtns button:hover {
+    box-shadow: 3px 3px 7px white;
+}
+
+.menubtn {
+    width: 300px;
+}
+
+.menubtn button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    float: right;
+}
+
+#seladora {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+#primer {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+#acabamento {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+#resultado {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    color: green;
+}
+
+#resultado2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    color: green;
+}
+
+#resultado3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    color: green;
+}
+
+#span1 {
+    display: none;
+    color: red;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+#container2 span {
+    display: none;
+    color: red;
+    transition: all 0.3s ease;
+    text-align: center;
+
+}
+
+#container3 span {
+    display: none;
+    color: red;
+    transition: all 0.3s ease;
+    text-align: center;
+
+}
+
+.styleresult {
+    width: 300px;
+    padding: 15px;
+    background-color: rgb(193, 233, 193);
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.loading1,
+.loading2,
+.loading3 {
+    display: none;
+    width: 100%;
+}
+
+.loading1 .elemento,
+.loading2 .elemento,
+.loading3 .elemento {
+    width: 50px;
+    height: 50px;
+    border: 3px outset rgb(4, 206, 206);
+    border-radius: 50%;
+    animation: carregando 1s infinite;
+}
+
+@keyframes carregando {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.load2 {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.saindo {
+    width: 300px;
+    height: 130%;
+    background-color: #16172c;
+    display: none;
+    top: -7rem;
+}
+
+.elemento {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px outset rgb(9, 214, 214);
+    animation: carregando 1s infinite;
+}

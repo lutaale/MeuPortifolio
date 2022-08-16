@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/phinterlogo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="painel.css">
+    <title>Painel de Orçamento</title>
+</head>
+
+<body>
+    <div class="saindo">
+        <div class="load2">Saindo <div class="elemento2"></div>
+        </div>
+    </div>
+    <header>
+        <div id="logo"><img src="../img/phinterlogo-removebg-preview.png" alt="Phinterlogo"></div>
+    </header>
+    <div class="title">Selecione o material a ser usado</div>
+    <!--botoes de selecao-->
+    <div class="menubtn"><button id="menubtns"><img
+                src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/32/ffffff/external-_24-user-interface-jumpicon-(glyph)-jumpicon-glyph-ayub-irawan.png" /></button>
+    </div>
+    <div id="navbtns">
+        <button id="seladora">Seladora</button>
+        <button id="primer">Primer</button>
+        <button id="acabamento">Acabamento</button>
+    </div>
+    <!--seladora-->
+    <section id="container">
+        <div class="title">Seladora</div>
+        <label for="metrosquadrados">Digite a metragem do cliente</label>
+        <span id="span1">Digite a metragem do cliente</span>
+        <div class="campo">
+            <input placeholder="m²" type="number" name="metrosquadrados" id="metrosquadrados" required>
+        </div>
+        <div class="campo">
+            <input placeholder="Desconto %" type="number" name="desconto" id="desconto" required>
+        </div>
+
+        <div id="btns">
+            <button id="calcular"><img style="width: 40px;"
+                    src="https://img.icons8.com/ios-filled/50/ffffff/calculate.png" />Calcular</button>
+            </button>
+            <button id="enviarorcamento"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/share--v1.png" />Enviar
+                orçamento
+        </div>
+        <div class="loading1">
+            <div class="elemento"></div>
+        </div>
+
+        <div id="resultado"></div>
+    </section>
+    <!--primer-->
+    <section id="container2">
+        <div class="title">Primer</div>
+
+        <label for="metrosquadrados2">Digite a metragem do cliente</label>
+        <span id="span2">Digite a metragem do cliente</span>
+        <div class="campo2">
+            <input placeholder="m²" type="number" name="metrosquadrados2" id="metrosquadrados2" required>
+        </div>
+        <div class="campo2">
+            <input placeholder="Desconto %" type="number" name="desconto2" id="desconto2" required>
+        </div>
+
+        <div id="btns">
+            <button id="calcular2"><img style="width: 40px;"
+                    src="https://img.icons8.com/ios-filled/50/ffffff/calculate.png" />Calcular</button>
+            <button id="enviarorcamento"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/share--v1.png" />Enviar
+                orçamento</button>
+        </div>
+        <div class="loading2">
+            <div class="elemento"></div>
+        </div>
+
+        <div id="resultado2"></div>
+    </section>
+    <!--acabamento-->
+    <section id="container3">
+        <div class="title">Acabamento</div>
+
+        <label for="metrosquadrados3">Digite a metragem do cliente</label>
+        <span id="span3">Digite a metragem do cliente</span>
+        <div class="campo3">
+            <input placeholder="m²" type="number" name="metrosquadrados3" id="metrosquadrados3" required>
+        </div>
+        <div class="campo3">
+            <input placeholder="Desconto %" type="number" name="desconto3" id="desconto3" required>
+        </div>
+
+        <div id="btns">
+            <button id="calcular3"><img style="width: 40px;"
+                    src="https://img.icons8.com/ios-filled/50/ffffff/calculate.png" />Calcular</button>
+            <button id="enviarorcamento"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/share--v1.png" />Enviar
+                orçamento</button>
+        </div>
+        <div class="loading3">
+            <div class="elemento"></div>
+        </div>
+        <div id="resultado3"></div>
+
+    </section>
+    <footer>
+        <button id="voltar"><img style="width: 30px;margin-right: 3px;"
+                src="https://img.icons8.com/material-rounded/24/ffffff/arrow-pointing-left.png" /></button>
+    </footer>
+</body>
+<script src="painel.js"></script>
+<script src="calculoorcamento.js"></script>
+
+</html>

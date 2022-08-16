@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cad.css">
+    <link rel="shortcut icon" href="../img/phinterlogo-removebg-preview.png" type="image/x-icon">
+
+    <title>Cadastrar Funcionario</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo"><img src="../img/phinterlogo-removebg-preview.png" alt="Phinterlogo"></div>
+    </header>
+    <section id="cadform">
+        <div id="camposgrup">
+            <div class="inputs">
+                <input type="text" name="nome" id="nome" required>
+                <span>Nome</span>
+            </div>
+            <div class="inputs">
+                <input type="text" name="email" id="email" required>
+                <span>Email</span>
+
+            </div>
+            <div class="inputs">
+                <input type="password" name="senha" id="senha" required>
+                <span>Senha</span>
+
+            </div>
+            <div class="inputs">
+                <input type="password" name="senha2" id="senha2" required>
+                <span>Confirme sua senha</span>
+            </div>
+        </div>
+        <div class="btns">
+            <button id="enviardados"><img style="width: 30px;margin-right: 3px;"
+                    src="https://img.icons8.com/ios/50/ffffff/save-all.png" />Salvar</button>
+        </div>
+    </section>
+    <div class="btns">
+        <button id="back"><img style="width: 30px;margin-right: 3px;"
+                src="https://img.icons8.com/material-rounded/24/ffffff/arrow-pointing-left.png" />Voltar</button>
+    </div>
+    <script src="cad.js"></script>
+    <script src="../testelogin.js"></script>
+</body>
+
+</html>
