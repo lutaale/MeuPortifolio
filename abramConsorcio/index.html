@@ -1,0 +1,127 @@
+<?php
+if(isset($_POST['submit'])){
+     include_once('dbconfig.php');
+     $nome = $_POST['nome'];
+     $email = $_POST['email'];
+     $telefone = $_POST['telefone'];
+     $obs = $_POST['obs'];
+     $result =  mysqli_query($conecxao,"INSERT INTO clientes(nome,email,telefone,observacao) VALUES ('$nome','$email ','$telefone','$obs')");
+ }
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Melhor Consórcio do brasil!, Melhores taxas do mercado!">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="resposive.css">
+    <link rel="shortcut icon" href="./img/COMM FUNDO.png" type="image/x-icon">
+    <title>Abram Consórcio</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div id="logo">
+                <a href="index.php">
+                    <picture id="logoimg"><img src="./img/SEM FUNDO.png" alt="Abram Consorcios">
+                    </picture>
+                </a>
+                <div class="menu">
+                    <button id="menu"><img src="https://img.icons8.com/material-outlined/48/1A1A1A/menu--v1.png" /></button>              
+                </div>
+            </div>
+            <div id="contatos">
+                <div id="telefone">
+                    <img src="https://img.icons8.com/ios-filled/40/004074/phonelink-ring--v1.png" />
+                    <span>(11) 9999-9999</span>
+                </div>
+                <div id="email">
+                    <img src="https://img.icons8.com/windows/40/004074/send-mass-email.png" />
+                    <span>abramconsorcio@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <nav id="nav">
+            <div class="btnclose">
+                <button id="fechar2">X</button>
+            </div>
+
+            <div id="btnarea">
+                <button>HOME</button>
+                <button>SOBRE NÓS</button>
+            </div>
+            <div class="redessociais">
+                <img src="https://img.icons8.com/material-outlined/48/FFFFFF/instagram-new--v1.png" />
+                <img src="https://img.icons8.com/ios-glyphs/48/FFFFFF/facebook-new.png" />
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <img id="background" src="./img/residence-g5d731e78a_1280.jpg" alt="">
+        <div id="text1">
+            <span>O <strong>Consórcio</strong> digital com a menor taxa do Brasil!</span>
+            <p>Clique no botao começar para preencher o Formulário!</p><br><br>
+            <span>Crédito de <strong>R$70.000,00</strong></span><br>
+            <span>180x</span>
+            <h1><strong>R$486,11</strong></h1>
+            <div id="btnarea2">
+                <button id="whats">Começar!</button>
+            </div>
+        </div>
+        <div id="formulario">
+            <div class="formgrup">
+                <form action="index.php" method="post">
+                    <div class="btnclose">
+                        <button id="fechar">X</button>
+                    </div>
+                    <div id="titleform">
+                        <h3>Preencha seus dados e entrarmos em contato com você!</h3>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="nome" id="nome" required>
+                        <span>Nome completo</span>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="email" id="email" autocomplete="off" required>
+                        <span>E-mail</span>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="telefone" id="telefone" autocomplete="off" required>
+                        <span>Telefone</span>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="obs" id="obs" required>
+                        <span>Observação</span>
+                    </div>
+
+                    <div class="btnsubmit">
+                        <button type="submit" name="submit" id="submit">Enviar!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    document.getElementById('whats').addEventListener('click', function () {
+        document.getElementById('formulario').setAttribute('style', 'display:flex')
+    })
+    document.getElementById('fechar').addEventListener('click', function () {
+        document.getElementById('formulario').setAttribute('style', 'display:none')
+    })
+    document.getElementById('fechar2').addEventListener('click', function () {
+        document.getElementById('nav').setAttribute('style', 'display:none')
+    })
+    document.getElementById('menu').addEventListener('click', function () {
+        document.getElementById('nav').setAttribute('style', 'display:flex')
+    })
+</script>
+
+</html>

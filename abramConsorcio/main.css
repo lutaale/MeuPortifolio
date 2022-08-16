@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    width: 100%;
+    height: 158px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logoimg {
+    display: flex;
+    align-items: center;
+}
+
+#logoimg img {
+    width: 200px;
+}
+
+#contatos {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#telefone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem;
+}
+
+#btnarea {
+    padding: 10px;
+    background-color: #004074;
+    z-index: 5;
+}
+
+nav button {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: #004074;
+    font-size: 15px;
+    transition: 0.3s ease;
+    color: white;
+}
+
+nav button:hover {
+    background-color: #08B5BC;
+}
+
+#main {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+}
+
+#main #background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 700px;
+}
+
+#text1 {
+    width: 50%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+
+#text1 p {
+    font-size: 20px;
+    color: grey;
+}
+
+#text1 img {
+    width: 395px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+#whats {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        border: none;
+    background-color: #08B5BC;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#btnarea2 {
+    display: flex;
+}
+
+#whats:hover {
+    background-color: #09D261;
+}
+
+#formulario {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.formgrup {
+    width: 55%;
+    height: 450px;
+    background-color: #004074cd;
+    border-radius: 10px;
+}
+
+#fechar {
+    display: none;
+}
+
+.formgrup form {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 15px;
+
+}
+
+.input {
+    width: 250px;
+    height: 40px;
+    background-color: transparent;
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.input span {
+    position: absolute;
+    color: white;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.input input:focus~span {
+    transform: translateY(-20px);
+    font-size: 10px;
+}
+
+.input input:valid~span {
+    transform: translateY(-20px);
+    font-size: 10px;
+}
+
+
+#titleform h3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.btnsubmit button {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #09D261;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.btnsubmit button:hover {
+    background-color: #054d25;
+}
+
+.redessociais {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+
+
+.btnclose {
+    display: none;
+}
+#btnarea2{
+    display: none;
+}
