@@ -1,0 +1,632 @@
+@media(max-width:1024px) {
+    #boxprojetos {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .projetos img,
+    .projetos2 img,
+    .projetos3 img {
+        width: 100%;
+        height: 200px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    #box3 {
+        height: 1930px;
+    }
+
+    div.inputs .span {
+        left: 322px;
+    }
+
+    #text p::before {
+        left: 22rem;
+    }
+
+    #text p::after {
+        left: 9rem;
+    }
+
+    .projetos,
+    .projetos2,
+    .projetos3 {
+        height: 280px;
+    }
+
+    .projetos img,
+    .projetos2 img,
+    .projetos3 img {
+        width: 45%;
+        height: 200px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 10%;
+
+    }
+
+    #Contatos {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    #formulario {
+        height: 650px;
+    }
+
+
+}
+
+@media(max-width:768px) {
+    body {
+        width: 100%;
+    }
+
+    .btnarea {
+        display: grid;
+        opacity: 0;
+        background-color: cadetblue;
+        z-index: 5;
+        height: 200px;
+        width: 100%;
+        position: absolute;
+        top: 9rem;
+        pointer-events: none;
+        overflow: hidden;
+    }
+
+    .btnarea.activebtnarea {
+        opacity: 1;
+        animation: revel 1s;
+        pointer-events: auto;
+    }
+
+    @keyframes revel {
+        0% {
+            height: 0px;
+        }
+
+        100% {
+            height: 200px;
+        }
+    }
+
+
+    .btnarea button {
+        color: #1b1b1b;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -2px;
+    }
+
+    .btnarea button:hover {
+        background-color: rgb(194, 210, 211);
+
+    }
+
+    #menubtn {
+        width: 50px;
+        height: 50px;
+        margin-left: 12rem;
+        border-top: 3px solid rgb(211, 205, 205);
+    }
+
+    #menubtn::after,
+    #menubtn::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: rgb(211, 205, 205);
+        margin-bottom: 11px;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    #menubtn.menubtnback {
+        border-top-color: transparent;
+    }
+
+    .menubtnback::before {
+        transform: rotate(135deg);
+    }
+
+    .menubtnback::after {
+        transform: rotate(-135deg);
+        top: -13px;
+    }
+
+
+    #boxprojetos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projetos,
+    .projetos2,
+    .projetos3 {
+        height: 280px;
+    }
+
+    .projetos img,
+    .projetos2 img,
+    .projetos3 img {
+        width: 60%;
+        height: 200px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 10%;
+
+    }
+
+    #box3 {
+        height: 1930px;
+    }
+
+    div.inputs .span {
+        left: 200px;
+    }
+
+    #text p::before {
+        left: 14rem;
+    }
+
+    #Contatos {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    #formulario {
+        height: 650px;
+    }
+
+
+}
+
+
+@media(max-width:500px) {
+
+    #logo img {
+        width: 300px;
+        height: 160px;
+        margin-left: -4rem
+    }
+
+    .btnarea {
+        display: grid;
+        opacity: 0;
+        background-color: cadetblue;
+        z-index: 5;
+        height: 200px;
+        width: 100%;
+        position: absolute;
+        top: 9rem;
+        pointer-events: none;
+        overflow: hidden;
+    }
+
+    .btnarea.activebtnarea {
+        opacity: 1;
+        animation: revel 1s;
+        pointer-events: auto;
+    }
+
+    @keyframes revel {
+        0% {
+            height: 0px;
+        }
+
+        100% {
+            height: 200px;
+        }
+    }
+
+
+    .btnarea button {
+        color: #1b1b1b;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -2px;
+    }
+
+    .btnarea button:hover {
+        background-color: rgb(194, 210, 211);
+
+    }
+
+    #menubtn {
+        width: 50px;
+        height: 50px;
+        margin-left: 7rem;
+        border-top: 3px solid rgb(211, 205, 205);
+    }
+
+    #menubtn::after,
+    #menubtn::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: rgb(211, 205, 205);
+        margin-bottom: 11px;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    #menubtn.menubtnback {
+        border-top-color: transparent;
+    }
+
+    .menubtnback::before {
+        transform: rotate(135deg);
+    }
+
+    .menubtnback::after {
+        transform: rotate(-135deg);
+        top: -13px;
+    }
+
+    #ilustracao {
+        display: none;
+    }
+
+    #text {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    #text h1 {
+        font-size: 4.5rem;
+    }
+
+    #text p::before {
+        left: 5rem;
+    }
+
+    #text p::after {
+        left: 9rem;
+    }
+
+    #text button {
+        margin-left: 45x;
+    }
+
+    #skillsgrup img {
+        width: 60px;
+    }
+
+    #box1 {
+        height: 800px;
+
+    }
+
+
+    #box2 h2 {
+        font-size: 25px;
+    }
+
+    #box3 {
+        height: 1930px;
+    }
+
+    #boxprojetos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #formulario {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.inputs {
+        width: 250px;
+    }
+
+    #msg {
+        width: 250px;
+    }
+
+    div.inputs .span {
+        left: 140px;
+    }
+
+    #linha {
+        display: none;
+    }
+
+    .containerform {
+        width: 100%;
+    }
+
+    .containerform button {
+        width: 250px;
+    }
+
+    #minha-foto {
+        margin-bottom: 2rem;
+        width: 100px;
+        height: 100px;
+        background: transparent;
+        border: none;
+    }
+
+    #minha-foto img {
+        width: 100px;
+    }
+
+    #sobremim {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .txtsobremin {
+        margin-top: 0;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    #Contatos {
+        flex-direction: column;
+    }
+
+    footer {
+        display: grid;
+    }
+
+    #indexloading .logo {
+        font-size: 25px;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+}
+
+@media(max-width:412px) {
+    #box3 {
+        height: 1950px;
+    }
+
+    .projetos img,
+    .projetos2 img,
+    .projetos3 img {
+        width: 85%;
+        height: 200px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 10%;
+    }
+
+    div.inputs .span {
+        left: 95px;
+    }
+
+    #text p::before {
+        left: 4rem;
+    }
+
+    #menubtn {
+        width: 35px;
+        height: 35px;
+        margin-left: 7rem;
+        border-top: 3px solid rgb(211, 205, 205);
+    }
+
+    #menubtn::after,
+    #menubtn::before {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 3px;
+        background-color: rgb(211, 205, 205);
+        margin-bottom: 7px;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .menubtnback::after {
+        transform: rotate(-135deg);
+        top: -10px;
+    }
+
+    .btnarea button {
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:375px) {
+
+    #proj1,
+    #proj2,
+    #proj3 {
+        width: 300px;
+        height: 40px;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    div.inputs .span {
+        left: 70px;
+    }
+
+    #text p::before {
+        left: 3rem;
+    }
+
+    #text p::after {
+        left: 9rem;
+    }
+
+    #menubtn {
+        width: 35px;
+        height: 35px;
+        margin-left: 7rem;
+        border-top: 3px solid rgb(211, 205, 205);
+    }
+
+    #menubtn::after,
+    #menubtn::before {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 3px;
+        background-color: rgb(211, 205, 205);
+        margin-bottom: 7px;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .menubtnback::after {
+        transform: rotate(-135deg);
+        top: -10px;
+    }
+
+    #indexloading .logo {
+        font-size: 25px;
+    }
+
+    .projetos,
+    .projetos2,
+    .projetos3 {
+        height: 245px;
+    }
+
+    .projetos img,
+    .projetos2 img,
+    .projetos3 img {
+        width: 95%;
+        height: 200px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 10%;
+
+    }
+
+    #box3 {
+        height: 1800px;
+    }
+
+    #text button {
+        width: 230px;
+        height: 50px;
+    }
+
+    .btnarea button {
+        font-size: 20px;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+}
+
+@media(max-width:320px) {
+    body {
+        width: 100%;
+    }
+
+    #text h1 {
+        font-size: 3.5rem;
+    }
+
+    #box3 {
+        width: 100%;
+        height: 1730px;
+    }
+
+    #proj1,
+    #proj2,
+    #proj3 {
+        width: 300px;
+        height: 40px;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    div.inputs .span {
+        left: 50px;
+    }
+
+    #text p::before {
+        left: 1rem;
+    }
+
+    #text p::after {
+        left: 9rem;
+    }
+
+    #text button {
+        width: 230px;
+        height: 50px;
+    }
+
+    #menubtn::after,
+    #menubtn::before {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 3px;
+        background-color: rgb(211, 205, 205);
+        margin-bottom: 7px;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .menubtnback::after {
+        transform: rotate(-135deg);
+        top: -10px;
+    }
+
+    .projetos,
+    .projetos2,
+    .projetos3 {
+        height: 235px;
+    }
+
+    .projetos img,
+    .projetos2 img,
+    .projetos3 img {
+        width: 95%;
+        height: 200px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 10%;
+
+    }
+
+    #indexloading .logo {
+        font-size: 25px;
+    }
+
+    .btnarea button {
+        font-size: 20px;
+    }
+
+    #footer {
+        text-align: center;
+    }
+}

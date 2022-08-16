@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+
+#indexloading {
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-delay: 1s;
+}
+
+#indexloading .logo {
+    font-size: 50px;
+    text-align: center;
+    animation: loanding 1.5s infinite;
+}
+
+@keyframes loanding {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+body {
+    background-color: #1b1b1b;
+    width: 100%;
+}
+
+header {
+    font-family: 'poppins', sans-serif;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: #1b1b1b75;
+}
+
+#logo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: cadetblue;
+}
+
+.logo span {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.logo p {
+    color: grey;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+#logo img {
+    width: 600px;
+    height: 200px;
+    margin-left: 6rem;
+}
+
+.btnarea {
+    width: 50%;
+    visibility: visible;
+}
+
+#menubtn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: -10rem;
+}
+
+
+.btnarea button {
+    border: none;
+    background: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: ease-in-out;
+}
+
+.btnarea button:hover {
+    color: cadetblue;
+    animation: rodar 0.1s;
+}
+
+@keyframes rodar {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#box1 {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./img/coding-g1878d61b5_1920.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@keyframes flutuando {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#text button {
+    width: 300px;
+    height: 70px;
+    background-color: transparent;
+    background-color: cadetblue;
+    color: #fff;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    animation: flutuando 1s infinite;
+    margin-top: 5rem;
+}
+
+
+#text {
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+#text h1 {
+    font-size: 5.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+#text span {
+    color: cadetblue;
+    font-size: 30px;
+}
+
+#text p {
+    font-size: 25px;
+    color: rgb(151, 151, 151);
+    font-weight: 600;
+}
+
+#text p::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 30px;
+    background-color: rgba(128, 128, 128, 0.544);
+    margin-left: 16rem;
+    margin-top: -2rem;
+}
+
+#text p::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 30px;
+    background-color: grey;
+    position: absolute;
+    left: 37.9rem;
+}
+
+#box2 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: cadetblue;
+}
+
+#box2 h2 {
+    font-size: 45px;
+    padding-top: 5px;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+#box2 img:hover {
+    animation: flutuando 1s infinite;
+}
+
+#box3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+#boxprojetos {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.projetos {
+    position: absolute;
+    display: flex;
+}
+
+.projetos img {
+    width: 600px;
+    min-width: 100px;
+}
+
+#projetosimg1,
+#projetosimg2,
+#projetosimg3,
+#projetosimg4,
+#projetosimg5,
+#projetosimg6 {
+
+    transition: all 0.5s ease-in;
+}
+
+.butonsarea a,
+.butonsarea button {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.butonsarea a:hover,
+.butonsarea button:hover {
+    background-color: white;
+    color: cadetblue;
+    border: none;
+}
+
+#formulario {
+    width: 100%;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(cadetblue, rgb(24, 47, 48));
+}
+
+.containerform {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.inputs {
+    border: 1px solid #fff;
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 2rem;
+}
+
+#msg {
+    width: 400px;
+    height: 100px;
+}
+
+div.inputs .input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+div.inputs .span {
+    position: absolute;
+    pointer-events: none;
+    background-color: transparent;
+    padding: 3px;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    left: 603px;
+    transition: 0.3s ease-in-out;
+    font-size: 13px;
+}
+
+div.inputs .input:focus~.span,
+div.inputs .input:valid~.span {
+    transform: translateY(-35px);
+}
+
+#formulario h2 {
+    font-size: 30px;
+    font-family: 'poppins', sans-serif;
+    color: rgb(39, 86, 88);
+}
+
+#Contatos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+    text-align: center;
+    gap: 2rem;
+}
+
+#Contatos h2 {
+    color: white;
+}
+
+.elementoscontato {
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    color: silver;
+}
+
+.elementoscontato span {
+    color: cadetblue;
+}
+
+.containerform button {
+    width: 400px;
+    height: 45px;
+    color: #fff;
+    background-color: cadetblue;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.containerform button:hover {
+    animation: flutuando 1s infinite;
+}
+
+#sobremim {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+    padding-top: 2rem;
+}
+
+
+#minha-foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50% 20% 20% 10%;
+    border: 1px solid grey;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 86, 88);
+}
+
+#minha-foto img {
+    width: 180px;
+    border-radius: 50% 20% 20% 10%;
+}
+
+.txtsobremin {
+    margin-left: 2rem;
+    font-family: 'poppins', sans-serif;
+}
+
+.txtsobremin button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: rgb(39, 86, 88);
+    color: white;
+    margin-top: 2rem;
+    cursor: pointer;
+    animation: flutuando 1s infinite;
+}
+
+.txtsobremin h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.txtsobremin h3 {
+    color: rgb(39, 86, 88);
+}
+
+.txtsobremin p {
+    font-size: 16px;
+    color: rgb(39, 86, 88);
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    margin-left: 10px;
+}
+
+footer p {
+    color: cadetblue;
+    font-family: 'poppins', sans-serif;
+}
+
+#iconscontact {
+    display: flex;
+    justify-content: center;
+}
+
+#skillsgrup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
