@@ -5,7 +5,9 @@ Meu nome é Alexandre Sou Desenvolvedor web
 
 
 ## 🛠 Habilidades
+React js
 Javascript
+Firebase
 HTML
 CSS
 PHP
